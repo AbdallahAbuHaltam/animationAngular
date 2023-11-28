@@ -132,10 +132,16 @@ export class AppComponent {
 
     }
     onDelete(item){
-
+      this.list.splice(this.list.indexOf(item),1);
     }
 
     onAdd(item) {
       this.list.push(item);
+    }
+    animationStart(event){
+      console.log(event);
+    }
+    animationDone(event){
+      console.log(event);
     }
 }
